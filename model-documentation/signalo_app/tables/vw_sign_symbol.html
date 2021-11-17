@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>vw_sign_symbol - signalo Database</title>
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
+        <!-- Bootstrap 3.3.5 -->
+        <link rel="stylesheet" href="../bower/admin-lte/bootstrap/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../bower/font-awesome/css/font-awesome.min.css">
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="../bower/ionicons/css/ionicons.min.css">
+        <!-- DataTables -->
+        <link rel="stylesheet" href="../bower/datatables.net-bs/css/dataTables.bootstrap.min.css">
+        <link rel="stylesheet" href="../bower/datatables.net-buttons-bs/css/buttons.bootstrap.min.css">
+        <!-- Code Mirror -->
+        <link rel="stylesheet" href="../bower/codemirror/codemirror.css">
+        <!-- Fonts -->
+        <link href='../fonts/indieflower/indie-flower.css' rel='stylesheet' type='text/css'>
+        <link href='../fonts/source-sans-pro/source-sans-pro.css' rel='stylesheet' type='text/css'>
+
+        <!-- Theme style -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/AdminLTE.min.css">
+        <!-- Salvattore -->
+        <link rel="stylesheet" href="../bower/salvattore/salvattore.css">
+        <!-- AdminLTE Skins. Choose a skin from the css/skins
+           folder instead of downloading all of them to reduce the load. -->
+        <link rel="stylesheet" href="../bower/admin-lte/dist/css/skins/_all-skins.min.css">
+        <!-- SchemaSpy -->
+        <link rel="stylesheet" href="../schemaSpy.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="../bower/html5shiv/html5shiv.min.js"></script>
+        <script src="../bower/respond/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+    <body class="hold-transition skin-blue layout-top-nav">
+        <div class="wrapper">
+            <header class="main-header">
+                <nav class="navbar navbar-static-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <a href="../../index.html" class="navbar-brand"><b>signalo</b> Database</a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../index.html">Tables <span class="sr-only">(current)</span></a></li>
+                                <li><a href="../columns.html" title="All of the columns in the schema">Columns</a></li>
+                                <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+                                <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+                                <li><a href="../orphans.html" title="View of tables with neither parents nor children">Orphan&nbsp;Tables</a></li>
+                                <li><a href="../anomalies.html" title="Things that might not be quite right">Anomalies</a></li>
+                                <li><a href="../routines.html" title="Procedures and functions">Routines</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                        <!-- Navbar Right Menu -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </header>
+            <!-- Main content -->
+            <!-- Full Width Column -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>vw_sign_symbol</h1><br />
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                            <h3 id="Columns" class="box-title">Columns</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                                <thead align='left'>
+                                <tr>
+                                    <th>Column</th>
+                                    <th>Type</th>
+                                    <th>Size</th>
+                                    <th title='Are nulls allowed?'>Nulls</th>
+                                    <th title='Is column automatically updated?'>Auto</th>
+                                    <th title='Default value'>Default</th>
+                                    <th title='Columns in tables that reference this column'>Children</th>
+                                    <th title='Columns in tables that are referenced by this column'>Parents</th>
+                                    <th title='Comments' class="toggle"><span>Comments</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><span id="id">id</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_inserted_date">_inserted_date</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_inserted_user">_inserted_user</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_last_modified_date">_last_modified_date</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_last_modified_user">_last_modified_user</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="case_decision">case_decision</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="case_id">case_id</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="comment">comment</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="complex">complex</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>false</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="dimension_1">dimension_1</span></td>
+                                    <td>numeric</td>
+                                    <td>8,3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="dimension_2">dimension_2</span></td>
+                                    <td>numeric</td>
+                                    <td>8,3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_coating">fk_coating</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_durability">fk_durability</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_lighting">fk_lighting</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_marker_type">fk_marker_type</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_mirror_shape">fk_mirror_shape</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_official_sign">fk_official_sign</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_owner">fk_owner</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_parent">fk_parent</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_provider">fk_provider</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_sign_type">fk_sign_type</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="fk_status">fk_status</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="inscription_1">inscription_1</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="inscription_2">inscription_2</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="inscription_3">inscription_3</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="installation_date">installation_date</span></td>
+                                    <td>date</td>
+                                    <td>13</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="manufacturing_date">manufacturing_date</span></td>
+                                    <td>date</td>
+                                    <td>13</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="mirror_protruding">mirror_protruding</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="mirror_red_frame">mirror_red_frame</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="picture">picture</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="usr_sign_1">usr_sign_1</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="usr_sign_2">usr_sign_2</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="usr_sign_3">usr_sign_3</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="verso">verso</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>false</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="azimut">azimut</span></td>
+                                    <td>int2</td>
+                                    <td>5</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_id">frame_id</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame__inserted_date">frame__inserted_date</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame__inserted_user">frame__inserted_user</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame__last_modified_date">frame__last_modified_date</span></td>
+                                    <td>timestamp</td>
+                                    <td>29,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame__last_modified_user">frame__last_modified_user</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_comment">frame_comment</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_dimension_1">frame_dimension_1</span></td>
+                                    <td>numeric</td>
+                                    <td>8,3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_dimension_2">frame_dimension_2</span></td>
+                                    <td>numeric</td>
+                                    <td>8,3</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_double_sided">frame_double_sided</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_fk_azimut">frame_fk_azimut</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_fk_frame_fixing_type">frame_fk_frame_fixing_type</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_fk_frame_type">frame_fk_frame_type</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_fk_provider">frame_fk_provider</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_fk_status">frame_fk_status</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_picture">frame_picture</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_rank">frame_rank</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_usr_frame_1">frame_usr_frame_1</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_usr_frame_2">frame_usr_frame_2</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="frame_usr_frame_3">frame_usr_frame_3</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="sign_rank">sign_rank</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="support_id">support_id</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="support_geometry">support_geometry</span></td>
+                                    <td>geometry</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_symbol_value_de">_symbol_value_de</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_symbol_value_fr">_symbol_value_fr</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_symbol_value_it">_symbol_value_it</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_symbol_value_ro">_symbol_value_ro</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_img_de">_img_de</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_img_fr">_img_fr</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_img_it">_img_it</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_img_ro">_img_ro</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_symbol_height">_symbol_height</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_symbol_width">_symbol_width</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_final_rank">_final_rank</span></td>
+                                    <td>int8</td>
+                                    <td>19</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_symbol_shift">_symbol_shift</span></td>
+                                    <td>int8</td>
+                                    <td>19</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_previous_sign_in_frame">_previous_sign_in_frame</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_next_sign_in_frame">_next_sign_in_frame</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_previous_frame">_previous_frame</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="_next_frame">_next_frame</span></td>
+                                    <td>uuid</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-code-o"></i>
+                            <h3 id="ViewDefinition" class="box-title">View Definition</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <textarea id="sql-script-codemirror" name="sql-script-codemirror" rows="" style="display: none;">WITH joined_tables AS (&#10;         SELECT sign.id,&#10;            sign._inserted_date,&#10;            sign._inserted_user,&#10;            sign._last_modified_date,&#10;            sign._last_modified_user,&#10;            sign.case_decision,&#10;            sign.case_id,&#10;            sign.comment,&#10;            sign.complex,&#10;            sign.dimension_1,&#10;            sign.dimension_2,&#10;            sign.fk_coating,&#10;            sign.fk_durability,&#10;            sign.fk_lighting,&#10;            sign.fk_marker_type,&#10;            sign.fk_mirror_shape,&#10;            sign.fk_official_sign,&#10;            sign.fk_owner,&#10;            sign.fk_parent,&#10;            sign.fk_provider,&#10;            sign.fk_sign_type,&#10;            sign.fk_status,&#10;            sign.inscription_1,&#10;            sign.inscription_2,&#10;            sign.inscription_3,&#10;            sign.installation_date,&#10;            sign.manufacturing_date,&#10;            sign.mirror_protruding,&#10;            sign.mirror_red_frame,&#10;            sign.picture,&#10;            sign.usr_sign_1,&#10;            sign.usr_sign_2,&#10;            sign.usr_sign_3,&#10;            sign.verso,&#10;            azimut.azimut,&#10;            frame.id AS frame_id,&#10;            frame._inserted_date AS frame__inserted_date,&#10;            frame._inserted_user AS frame__inserted_user,&#10;            frame._last_modified_date AS frame__last_modified_date,&#10;            frame._last_modified_user AS frame__last_modified_user,&#10;            frame.comment AS frame_comment,&#10;            frame.dimension_1 AS frame_dimension_1,&#10;            frame.dimension_2 AS frame_dimension_2,&#10;            frame.double_sided AS frame_double_sided,&#10;            frame.fk_azimut AS frame_fk_azimut,&#10;            frame.fk_frame_fixing_type AS frame_fk_frame_fixing_type,&#10;            frame.fk_frame_type AS frame_fk_frame_type,&#10;            frame.fk_provider AS frame_fk_provider,&#10;            frame.fk_status AS frame_fk_status,&#10;            frame.picture AS frame_picture,&#10;            frame.rank AS frame_rank,&#10;            frame.usr_frame_1 AS frame_usr_frame_1,&#10;            frame.usr_frame_2 AS frame_usr_frame_2,&#10;            frame.usr_frame_3 AS frame_usr_frame_3,&#10;            sign.rank AS sign_rank,&#10;            support.id AS support_id,&#10;            support.geometry AS support_geometry,&#10;            vl_official_sign.value_de AS _symbol_value_de,&#10;            vl_official_sign.value_fr AS _symbol_value_fr,&#10;            vl_official_sign.value_it AS _symbol_value_it,&#10;            vl_official_sign.value_ro AS _symbol_value_ro,&#10;                CASE&#10;                    WHEN (sign.complex IS TRUE) THEN &#39;complex.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 11) THEN vl_official_sign.img_de&#10;                    WHEN (sign.fk_sign_type = 12) THEN &#39;marker.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 13) THEN &#39;mirror.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 14) THEN &#39;street-plate.svg&#39;::text&#10;                    ELSE NULL::text&#10;                END AS _img_de,&#10;                CASE&#10;                    WHEN (sign.complex IS TRUE) THEN &#39;complex.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 11) THEN vl_official_sign.img_fr&#10;                    WHEN (sign.fk_sign_type = 12) THEN &#39;marker.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 13) THEN &#39;mirror.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 14) THEN &#39;street-plate.svg&#39;::text&#10;                    ELSE NULL::text&#10;                END AS _img_fr,&#10;                CASE&#10;                    WHEN (sign.complex IS TRUE) THEN &#39;complex.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 11) THEN vl_official_sign.img_it&#10;                    WHEN (sign.fk_sign_type = 12) THEN &#39;marker.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 13) THEN &#39;mirror.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 14) THEN &#39;street-plate.svg&#39;::text&#10;                    ELSE NULL::text&#10;                END AS _img_it,&#10;                CASE&#10;                    WHEN (sign.complex IS TRUE) THEN &#39;complex.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 11) THEN vl_official_sign.img_ro&#10;                    WHEN (sign.fk_sign_type = 12) THEN &#39;marker.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 13) THEN &#39;mirror.svg&#39;::text&#10;                    WHEN (sign.fk_sign_type = 14) THEN &#39;street-plate.svg&#39;::text&#10;                    ELSE NULL::text&#10;                END AS _img_ro,&#10;                CASE&#10;                    WHEN (sign.complex IS TRUE) THEN 106&#10;                    WHEN (sign.fk_sign_type = 11) THEN vl_official_sign.img_height&#10;                    WHEN (sign.fk_sign_type = 12) THEN 130&#10;                    WHEN (sign.fk_sign_type = 13) THEN 100&#10;                    WHEN (sign.fk_sign_type = 14) THEN 100&#10;                    ELSE NULL::integer&#10;                END AS _symbol_height,&#10;                CASE&#10;                    WHEN (sign.complex IS TRUE) THEN 121&#10;                    WHEN (sign.fk_sign_type = 11) THEN vl_official_sign.img_width&#10;                    WHEN (sign.fk_sign_type = 12) THEN 70&#10;                    WHEN (sign.fk_sign_type = 13) THEN 100&#10;                    WHEN (sign.fk_sign_type = 14) THEN 130&#10;                    ELSE NULL::integer&#10;                END AS _symbol_width&#10;           FROM ((((signalo_db.sign&#10;             LEFT JOIN signalo_db.frame ON ((frame.id = sign.fk_frame)))&#10;             LEFT JOIN signalo_db.azimut ON ((azimut.id = frame.fk_azimut)))&#10;             LEFT JOIN signalo_db.support ON ((support.id = azimut.fk_support)))&#10;             LEFT JOIN signalo_db.vl_official_sign ON ((vl_official_sign.id = sign.fk_official_sign)))&#10;        ), ordered_recto_signs AS (&#10;         SELECT joined_tables.id,&#10;            joined_tables._inserted_date,&#10;            joined_tables._inserted_user,&#10;            joined_tables._last_modified_date,&#10;            joined_tables._last_modified_user,&#10;            joined_tables.case_decision,&#10;            joined_tables.case_id,&#10;            joined_tables.comment,&#10;            joined_tables.complex,&#10;            joined_tables.dimension_1,&#10;            joined_tables.dimension_2,&#10;            joined_tables.fk_coating,&#10;            joined_tables.fk_durability,&#10;            joined_tables.fk_lighting,&#10;            joined_tables.fk_marker_type,&#10;            joined_tables.fk_mirror_shape,&#10;            joined_tables.fk_official_sign,&#10;            joined_tables.fk_owner,&#10;            joined_tables.fk_parent,&#10;            joined_tables.fk_provider,&#10;            joined_tables.fk_sign_type,&#10;            joined_tables.fk_status,&#10;            joined_tables.inscription_1,&#10;            joined_tables.inscription_2,&#10;            joined_tables.inscription_3,&#10;            joined_tables.installation_date,&#10;            joined_tables.manufacturing_date,&#10;            joined_tables.mirror_protruding,&#10;            joined_tables.mirror_red_frame,&#10;            joined_tables.picture,&#10;            joined_tables.usr_sign_1,&#10;            joined_tables.usr_sign_2,&#10;            joined_tables.usr_sign_3,&#10;            joined_tables.verso,&#10;            joined_tables.azimut,&#10;            joined_tables.frame_id,&#10;            joined_tables.frame__inserted_date,&#10;            joined_tables.frame__inserted_user,&#10;            joined_tables.frame__last_modified_date,&#10;            joined_tables.frame__last_modified_user,&#10;            joined_tables.frame_comment,&#10;            joined_tables.frame_dimension_1,&#10;            joined_tables.frame_dimension_2,&#10;            joined_tables.frame_double_sided,&#10;            joined_tables.frame_fk_azimut,&#10;            joined_tables.frame_fk_frame_fixing_type,&#10;            joined_tables.frame_fk_frame_type,&#10;            joined_tables.frame_fk_provider,&#10;            joined_tables.frame_fk_status,&#10;            joined_tables.frame_picture,&#10;            joined_tables.frame_rank,&#10;            joined_tables.frame_usr_frame_1,&#10;            joined_tables.frame_usr_frame_2,&#10;            joined_tables.frame_usr_frame_3,&#10;            joined_tables.sign_rank,&#10;            joined_tables.support_id,&#10;            joined_tables.support_geometry,&#10;            joined_tables._symbol_value_de,&#10;            joined_tables._symbol_value_fr,&#10;            joined_tables._symbol_value_it,&#10;            joined_tables._symbol_value_ro,&#10;            joined_tables._img_de,&#10;            joined_tables._img_fr,&#10;            joined_tables._img_it,&#10;            joined_tables._img_ro,&#10;            joined_tables._symbol_height,&#10;            joined_tables._symbol_width,&#10;            row_number() OVER (PARTITION BY joined_tables.support_id, joined_tables.azimut ORDER BY joined_tables.frame_rank, joined_tables.sign_rank) AS _final_rank&#10;           FROM joined_tables&#10;          WHERE (joined_tables.verso IS FALSE)&#10;          ORDER BY joined_tables.support_id, joined_tables.azimut, (row_number() OVER (PARTITION BY joined_tables.support_id, joined_tables.azimut ORDER BY joined_tables.frame_rank, joined_tables.sign_rank))&#10;        ), ordered_shifted_recto_signs AS (&#10;         SELECT ordered_recto_signs.id,&#10;            ordered_recto_signs._inserted_date,&#10;            ordered_recto_signs._inserted_user,&#10;            ordered_recto_signs._last_modified_date,&#10;            ordered_recto_signs._last_modified_user,&#10;            ordered_recto_signs.case_decision,&#10;            ordered_recto_signs.case_id,&#10;            ordered_recto_signs.comment,&#10;            ordered_recto_signs.complex,&#10;            ordered_recto_signs.dimension_1,&#10;            ordered_recto_signs.dimension_2,&#10;            ordered_recto_signs.fk_coating,&#10;            ordered_recto_signs.fk_durability,&#10;            ordered_recto_signs.fk_lighting,&#10;            ordered_recto_signs.fk_marker_type,&#10;            ordered_recto_signs.fk_mirror_shape,&#10;            ordered_recto_signs.fk_official_sign,&#10;            ordered_recto_signs.fk_owner,&#10;            ordered_recto_signs.fk_parent,&#10;            ordered_recto_signs.fk_provider,&#10;            ordered_recto_signs.fk_sign_type,&#10;            ordered_recto_signs.fk_status,&#10;            ordered_recto_signs.inscription_1,&#10;            ordered_recto_signs.inscription_2,&#10;            ordered_recto_signs.inscription_3,&#10;            ordered_recto_signs.installation_date,&#10;            ordered_recto_signs.manufacturing_date,&#10;            ordered_recto_signs.mirror_protruding,&#10;            ordered_recto_signs.mirror_red_frame,&#10;            ordered_recto_signs.picture,&#10;            ordered_recto_signs.usr_sign_1,&#10;            ordered_recto_signs.usr_sign_2,&#10;            ordered_recto_signs.usr_sign_3,&#10;            ordered_recto_signs.verso,&#10;            ordered_recto_signs.azimut,&#10;            ordered_recto_signs.frame_id,&#10;            ordered_recto_signs.frame__inserted_date,&#10;            ordered_recto_signs.frame__inserted_user,&#10;            ordered_recto_signs.frame__last_modified_date,&#10;            ordered_recto_signs.frame__last_modified_user,&#10;            ordered_recto_signs.frame_comment,&#10;            ordered_recto_signs.frame_dimension_1,&#10;            ordered_recto_signs.frame_dimension_2,&#10;            ordered_recto_signs.frame_double_sided,&#10;            ordered_recto_signs.frame_fk_azimut,&#10;            ordered_recto_signs.frame_fk_frame_fixing_type,&#10;            ordered_recto_signs.frame_fk_frame_type,&#10;            ordered_recto_signs.frame_fk_provider,&#10;            ordered_recto_signs.frame_fk_status,&#10;            ordered_recto_signs.frame_picture,&#10;            ordered_recto_signs.frame_rank,&#10;            ordered_recto_signs.frame_usr_frame_1,&#10;            ordered_recto_signs.frame_usr_frame_2,&#10;            ordered_recto_signs.frame_usr_frame_3,&#10;            ordered_recto_signs.sign_rank,&#10;            ordered_recto_signs.support_id,&#10;            ordered_recto_signs.support_geometry,&#10;            ordered_recto_signs._symbol_value_de,&#10;            ordered_recto_signs._symbol_value_fr,&#10;            ordered_recto_signs._symbol_value_it,&#10;            ordered_recto_signs._symbol_value_ro,&#10;            ordered_recto_signs._img_de,&#10;            ordered_recto_signs._img_fr,&#10;            ordered_recto_signs._img_it,&#10;            ordered_recto_signs._img_ro,&#10;            ordered_recto_signs._symbol_height,&#10;            ordered_recto_signs._symbol_width,&#10;            ordered_recto_signs._final_rank,&#10;            COALESCE(sum(ordered_recto_signs._symbol_height) OVER (PARTITION BY ordered_recto_signs.support_id, ordered_recto_signs.azimut ROWS BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING), (0)::bigint) AS _symbol_shift,&#10;            NULLIF(first_value(ordered_recto_signs.id) OVER (PARTITION BY ordered_recto_signs.support_id, ordered_recto_signs.azimut, ordered_recto_signs.frame_rank ROWS BETWEEN 1 PRECEDING AND CURRENT ROW), ordered_recto_signs.id) AS _previous_sign_in_frame,&#10;            NULLIF(last_value(ordered_recto_signs.id) OVER (PARTITION BY ordered_recto_signs.support_id, ordered_recto_signs.azimut, ordered_recto_signs.frame_rank ROWS BETWEEN CURRENT ROW AND 1 FOLLOWING), ordered_recto_signs.id) AS _next_sign_in_frame,&#10;            NULLIF(first_value(ordered_recto_signs.frame_id) OVER (PARTITION BY ordered_recto_signs.support_id, ordered_recto_signs.azimut ROWS BETWEEN 1 PRECEDING AND CURRENT ROW), ordered_recto_signs.frame_id) AS _previous_frame,&#10;            NULLIF(last_value(ordered_recto_signs.frame_id) OVER (PARTITION BY ordered_recto_signs.support_id, ordered_recto_signs.azimut ROWS BETWEEN CURRENT ROW AND 1 FOLLOWING), ordered_recto_signs.frame_id) AS _next_frame&#10;           FROM ordered_recto_signs&#10;          ORDER BY ordered_recto_signs.support_id, ordered_recto_signs.azimut, ordered_recto_signs._final_rank&#10;        )&#10; SELECT ordered_shifted_recto_signs.id,&#10;    ordered_shifted_recto_signs._inserted_date,&#10;    ordered_shifted_recto_signs._inserted_user,&#10;    ordered_shifted_recto_signs._last_modified_date,&#10;    ordered_shifted_recto_signs._last_modified_user,&#10;    ordered_shifted_recto_signs.case_decision,&#10;    ordered_shifted_recto_signs.case_id,&#10;    ordered_shifted_recto_signs.comment,&#10;    ordered_shifted_recto_signs.complex,&#10;    ordered_shifted_recto_signs.dimension_1,&#10;    ordered_shifted_recto_signs.dimension_2,&#10;    ordered_shifted_recto_signs.fk_coating,&#10;    ordered_shifted_recto_signs.fk_durability,&#10;    ordered_shifted_recto_signs.fk_lighting,&#10;    ordered_shifted_recto_signs.fk_marker_type,&#10;    ordered_shifted_recto_signs.fk_mirror_shape,&#10;    ordered_shifted_recto_signs.fk_official_sign,&#10;    ordered_shifted_recto_signs.fk_owner,&#10;    ordered_shifted_recto_signs.fk_parent,&#10;    ordered_shifted_recto_signs.fk_provider,&#10;    ordered_shifted_recto_signs.fk_sign_type,&#10;    ordered_shifted_recto_signs.fk_status,&#10;    ordered_shifted_recto_signs.inscription_1,&#10;    ordered_shifted_recto_signs.inscription_2,&#10;    ordered_shifted_recto_signs.inscription_3,&#10;    ordered_shifted_recto_signs.installation_date,&#10;    ordered_shifted_recto_signs.manufacturing_date,&#10;    ordered_shifted_recto_signs.mirror_protruding,&#10;    ordered_shifted_recto_signs.mirror_red_frame,&#10;    ordered_shifted_recto_signs.picture,&#10;    ordered_shifted_recto_signs.usr_sign_1,&#10;    ordered_shifted_recto_signs.usr_sign_2,&#10;    ordered_shifted_recto_signs.usr_sign_3,&#10;    ordered_shifted_recto_signs.verso,&#10;    ordered_shifted_recto_signs.azimut,&#10;    ordered_shifted_recto_signs.frame_id,&#10;    ordered_shifted_recto_signs.frame__inserted_date,&#10;    ordered_shifted_recto_signs.frame__inserted_user,&#10;    ordered_shifted_recto_signs.frame__last_modified_date,&#10;    ordered_shifted_recto_signs.frame__last_modified_user,&#10;    ordered_shifted_recto_signs.frame_comment,&#10;    ordered_shifted_recto_signs.frame_dimension_1,&#10;    ordered_shifted_recto_signs.frame_dimension_2,&#10;    ordered_shifted_recto_signs.frame_double_sided,&#10;    ordered_shifted_recto_signs.frame_fk_azimut,&#10;    ordered_shifted_recto_signs.frame_fk_frame_fixing_type,&#10;    ordered_shifted_recto_signs.frame_fk_frame_type,&#10;    ordered_shifted_recto_signs.frame_fk_provider,&#10;    ordered_shifted_recto_signs.frame_fk_status,&#10;    ordered_shifted_recto_signs.frame_picture,&#10;    ordered_shifted_recto_signs.frame_rank,&#10;    ordered_shifted_recto_signs.frame_usr_frame_1,&#10;    ordered_shifted_recto_signs.frame_usr_frame_2,&#10;    ordered_shifted_recto_signs.frame_usr_frame_3,&#10;    ordered_shifted_recto_signs.sign_rank,&#10;    ordered_shifted_recto_signs.support_id,&#10;    ordered_shifted_recto_signs.support_geometry,&#10;    ordered_shifted_recto_signs._symbol_value_de,&#10;    ordered_shifted_recto_signs._symbol_value_fr,&#10;    ordered_shifted_recto_signs._symbol_value_it,&#10;    ordered_shifted_recto_signs._symbol_value_ro,&#10;    ordered_shifted_recto_signs._img_de,&#10;    ordered_shifted_recto_signs._img_fr,&#10;    ordered_shifted_recto_signs._img_it,&#10;    ordered_shifted_recto_signs._img_ro,&#10;    ordered_shifted_recto_signs._symbol_height,&#10;    ordered_shifted_recto_signs._symbol_width,&#10;    ordered_shifted_recto_signs._final_rank,&#10;    ordered_shifted_recto_signs._symbol_shift,&#10;    ordered_shifted_recto_signs._previous_sign_in_frame,&#10;    ordered_shifted_recto_signs._next_sign_in_frame,&#10;    ordered_shifted_recto_signs._previous_frame,&#10;    ordered_shifted_recto_signs._next_frame&#10;   FROM ordered_shifted_recto_signs&#10;UNION&#10; SELECT jt.id,&#10;    jt._inserted_date,&#10;    jt._inserted_user,&#10;    jt._last_modified_date,&#10;    jt._last_modified_user,&#10;    jt.case_decision,&#10;    jt.case_id,&#10;    jt.comment,&#10;    jt.complex,&#10;    jt.dimension_1,&#10;    jt.dimension_2,&#10;    jt.fk_coating,&#10;    jt.fk_durability,&#10;    jt.fk_lighting,&#10;    jt.fk_marker_type,&#10;    jt.fk_mirror_shape,&#10;    jt.fk_official_sign,&#10;    jt.fk_owner,&#10;    jt.fk_parent,&#10;    jt.fk_provider,&#10;    jt.fk_sign_type,&#10;    jt.fk_status,&#10;    jt.inscription_1,&#10;    jt.inscription_2,&#10;    jt.inscription_3,&#10;    jt.installation_date,&#10;    jt.manufacturing_date,&#10;    jt.mirror_protruding,&#10;    jt.mirror_red_frame,&#10;    jt.picture,&#10;    jt.usr_sign_1,&#10;    jt.usr_sign_2,&#10;    jt.usr_sign_3,&#10;    jt.verso,&#10;    jt.azimut,&#10;    jt.frame_id,&#10;    jt.frame__inserted_date,&#10;    jt.frame__inserted_user,&#10;    jt.frame__last_modified_date,&#10;    jt.frame__last_modified_user,&#10;    jt.frame_comment,&#10;    jt.frame_dimension_1,&#10;    jt.frame_dimension_2,&#10;    jt.frame_double_sided,&#10;    jt.frame_fk_azimut,&#10;    jt.frame_fk_frame_fixing_type,&#10;    jt.frame_fk_frame_type,&#10;    jt.frame_fk_provider,&#10;    jt.frame_fk_status,&#10;    jt.frame_picture,&#10;    jt.frame_rank,&#10;    jt.frame_usr_frame_1,&#10;    jt.frame_usr_frame_2,&#10;    jt.frame_usr_frame_3,&#10;    jt.sign_rank,&#10;    jt.support_id,&#10;    jt.support_geometry,&#10;    jt._symbol_value_de,&#10;    jt._symbol_value_fr,&#10;    jt._symbol_value_it,&#10;    jt._symbol_value_ro,&#10;    jt._img_de,&#10;    jt._img_fr,&#10;    jt._img_it,&#10;    jt._img_ro,&#10;    jt._symbol_height,&#10;    jt._symbol_width,&#10;    osrs._final_rank,&#10;    osrs._symbol_shift,&#10;    NULL::uuid AS _previous_sign_in_frame,&#10;    NULL::uuid AS _next_sign_in_frame,&#10;    NULL::uuid AS _previous_frame,&#10;    NULL::uuid AS _next_frame&#10;   FROM (joined_tables jt&#10;     LEFT JOIN ordered_shifted_recto_signs osrs ON (((osrs.support_id = jt.support_id) AND (osrs.frame_id = jt.frame_id) AND ((jt.sign_rank - 1) = osrs.sign_rank))))&#10;  WHERE (jt.verso IS TRUE);</textarea>
+                            <div style="padding-top: 5px;"><hr></div>
+                            <div class="box box-solid">
+                                <div class="box-header with-border">
+                                    <i class="fa fa-puzzle-piece"></i>
+                                    <h3 class="box-title">Possibly Referenced Tables/Views</h3>
+                                </div>
+                                <!-- /.box-header -->
+                                <div class="box-body">
+                                    <ul class="list-unstyled">
+                                    </ul>
+                                </div><!-- /.box-body -->
+                            </div>
+                        </div><!-- /.box-body -->
+                    </div>
+                </section>
+                <script>
+                    var config = {
+                        pagination: true
+                    }
+                </script>
+            </div>
+            <!-- /.content-wrapper -->
+            <footer class="main-footer">
+                <div>
+                    <div class="pull-right hidden-xs">
+                        <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
+                        <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
+                    </div>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+        <!-- ./wrapper -->
+
+        <!-- jQuery 2.2.3 -->
+        <script src="../bower/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../bower/admin-lte/plugins/jQueryUI/jquery-ui.min.js"></script>
+        <!-- Bootstrap 3.3.5 -->
+        <script src="../bower/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+        <!-- DataTables -->
+        <script src="../bower/datatables.net/jquery.dataTables.min.js"></script>
+        <script src="../bower/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/dataTables.buttons.min.js"></script>
+        <script src="../bower/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.html5.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.print.min.js"></script>
+        <script src="../bower/datatables.net-buttons/buttons.colVis.min.js"></script>
+        <!-- SheetJS -->
+        <script src="../bower/js-xlsx/xlsx.full.min.js"></script>
+        <!-- pdfmake -->
+        <script src="../bower/pdfmake/pdfmake.min.js"></script>
+        <script src="../bower/pdfmake/vfs_fonts.js"></script>
+        <!-- SlimScroll -->
+        <script src="../bower/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+        <!-- FastClick -->
+        <script src="../bower/admin-lte/plugins/fastclick/fastclick.js"></script>
+        <!-- Salvattore -->
+        <script src="../bower/salvattore/salvattore.min.js"></script>
+        <!-- AnchorJS -->
+        <script src="../bower/anchor-js/anchor.min.js"></script>
+        <!-- CodeMirror -->
+        <script src="../bower/codemirror/codemirror.js"></script>
+        <script src="../bower/codemirror/sql.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../bower/admin-lte/dist/js/app.min.js"></script>
+        <script src="table.js"></script>
+        <script src="../schemaSpy.js"></script>
+    </body>
+</html>
