@@ -497,21 +497,42 @@
 <li>Un serveur Postgresql version 10 ou plus récente</li>
 </ul>
 <h3 id="telechargement">Téléchargement</h3>
+<ol>
+<li>
 <p>Pour installer signalo, trouvez la <a href="https://github.com/opengisch/signalo/releases/latest">dernière version</a> et téléchargez</p>
 <ul>
 <li>le fichier <code>project.zip</code> contenant le projet QGIS nécessaire à la visualisation des données.</li>
 <li>le dump du modèle de données (avec ou sans données démo)</li>
 </ul>
+</li>
+</ol>
 <h3 id="modele-de-donnees">Modèle de données</h3>
-<p>Réstaurez ensuite le dump (avec pg_restore pour le fichier binaire ou avec psql pour le fichier SQL).</p>
+<ol start="2">
+<li>
 <p>Créez un <a href="https://www.postgresql.org/docs/current/libpq-pgservice.html">service postgresl</a> <code>pg_signalo</code> avec les informations de connexion.</p>
+</li>
+<li>
+<p>Réstaurez ensuite le dump:</p>
+<ul>
+<li>pour un dump binaire (fichier avec extension <code>.backup</code>), utiliser <code>pg_restore</code> facilement utilisable avec <a href="https://www.pgadmin.org/">pgAdmin</a></li>
+<li>pour un dump SQL (fichier avec extension <code>.sql</code>), utiliser la ligne de commande:
+<code>PGSERVICE=pg_signalo psql -v ON_ERROR_STOP=1 -f _chemin_vers_le_fichier_sql</code></li>
+</ul>
+</li>
+</ol>
 <h3 id="desktop">Desktop</h3>
+<ol start="4">
+<li>
 <p>Dans QGIS, installez les plugins suivants:</p>
 <ul>
 <li><a href="https://plugins.qgis.org/plugins/ordered_relation_editor/">Ordered Relation Editor</a></li>
 <li><a href="https://plugins.qgis.org/plugins/qfieldsync/">QFieldSync</a> (version min 4.0)</li>
 </ul>
+</li>
+<li>
 <p>Ouvrez le projet QGIS du dossier extrait.</p>
+</li>
+</ol>
                 
               
               

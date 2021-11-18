@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ajout-de-signaux" class="md-skip">
+        <a href="#edition" class="md-skip">
           Aller au contenu
         </a>
       
@@ -379,8 +379,35 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#edition" class="md-nav__link">
+    Edition
+  </a>
+  
+    <nav class="md-nav" aria-label="Edition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#ajout-de-signaux" class="md-nav__link">
     Ajout de signaux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taille-des-panneaux" class="md-nav__link">
+    Taille des panneaux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environnements-de-travail" class="md-nav__link">
+    Environnements de travail
   </a>
   
 </li>
@@ -428,8 +455,35 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#edition" class="md-nav__link">
+    Edition
+  </a>
+  
+    <nav class="md-nav" aria-label="Edition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#ajout-de-signaux" class="md-nav__link">
     Ajout de signaux
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#taille-des-panneaux" class="md-nav__link">
+    Taille des panneaux
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environnements-de-travail" class="md-nav__link">
+    Environnements de travail
   </a>
   
 </li>
@@ -449,28 +503,69 @@
                 
                   <h1>Desktop</h1>
                 
-                <h3 id="ajout-de-signaux">Ajout de signaux</h3>
+                <h2 id="edition">Edition</h2>
+<h3 id="ajout-de-signaux">Ajout de signaux</h3>
 <ul>
-<li>Editer la couche "Support"</li>
+<li>Mettre la couche "Support" en édition et digitaliser un point pour ouvrir le formulaire.</li>
 <li>Le formulaire et composé de trois onglets "Général", "Azimut" et "Photo"</li>
 </ul>
-<p><img alt="Figure 1 - Onglet Général" src="../assets/images/printscreen/support_form_general.PNG" />
-<img alt="Figure 2 - Onglet Azimut" src="../assets/images/printscreen/support_form_azimut.PNG" />
-<img alt="Figure 3 - Onglet Photo" src="../assets/images/printscreen/support_form_photo.PNG" /></p>
-<ul>
-<li>Dans l’onglet “Azimut” ajouter l’azimut de la signalisation</li>
-<li>Un formulaire “Azimut” s’ouvre, y ajouter les azimuts liés au support</li>
-<li>Par azimut ajouter les cadres</li>
-<li>Par cadre ajouter les signaux</li>
-</ul>
-<p>La structure de la signalisation donne les possibilités suivantes :</p>
-<ul>
-<li><em>Un support peut contenir plusieurs azimuts</em></li>
-<li><em>Un azimut peut contenir plusieurs cadres</em></li>
-<li><em>Un cadre peut contenir plusieurs signaux</em></li>
-</ul>
-<p>Ci-dessous un exemple de structure :</p>
-<p><img alt="Figure 4 - Support" src="../assets/images/printscreen/support_all.PNG" /></p>
+<figure>
+<p><img alt="Projet QField" src="../assets/images/printscreen/support_form_general.png" width="500" />
+  </p>
+<figcaption>Onglet général</figcaption>
+</figure>
+<figure>
+<p><img alt="Projet QField" src="../assets/images/printscreen/support_form_azimut.png" width="500" />
+  </p>
+<figcaption>Onglet azimut</figcaption>
+</figure>
+<figure>
+<p><img alt="Projet QField" src="../assets/images/printscreen/support_form_photo.png" width="500" />
+  </p>
+<figcaption>Onglet photo</figcaption>
+</figure>
+<p>Dans l’onglet “Azimut”, les cadres et signaux peuvent y être saisis. </p>
+<figure>
+<p><img alt="Projet QField" src="../assets/images/printscreen/support_all.png" width="500" />
+  </p>
+<figcaption>Exemple d'un azimut avec plusieurs cadres et signaux</figcaption>
+</figure>
+<h2 id="taille-des-panneaux">Taille des panneaux</h2>
+<p>La taille des panneaux peut être ajustée dans les propriétés du projet, dans l'onglet <code>Variables</code>, en modifiant la variable <code>signalo_img_size</code>.</p>
+<figure>
+<p><img alt="Projet QField" src="../assets/images/printscreen/set-image-size.png" width="500" />
+  </p>
+<figcaption>Réglage de la taille de l'image</figcaption>
+</figure>
+<h2 id="environnements-de-travail">Environnements de travail</h2>
+<p>Vous avez la possibilité d'avoir plusieurs environnements de travail: test, production, …
+Plusieurs fichiers projets sont disponibles avec chaque version:</p>
+<table>
+<thead>
+<tr>
+<th>Fichier projet</th>
+<th>nom du service PG</th>
+<th>exemple d'utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>signalo.qgs</code></td>
+<td><code>pg_signalo</code></td>
+<td>demo</td>
+</tr>
+<tr>
+<td><code>signalo_prod.qgs</code></td>
+<td><code>pg_signalo_prod</code></td>
+<td>production</td>
+</tr>
+<tr>
+<td><code>signalo_dev.qgs</code></td>
+<td><code>pg_signalo_dev</code></td>
+<td>test et développement</td>
+</tr>
+</tbody>
+</table>
                 
               
               
